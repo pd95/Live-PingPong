@@ -13,11 +13,14 @@ struct AddServerView: View {
     @State private var url = ""
 
     @State private var showingError = false
+    @State private var validationMessage: String?
 
     var body: some View {
         Form {
             TextField("Server URL:", text: $url)
                 .onSubmit(save)
+
+            validationMessage.map(Text.init)
 
             HStack {
                 Spacer()
@@ -49,7 +52,13 @@ struct AddServerView: View {
             return
         }
 
-        if let url = URL(string: url) {
+        guard let url = URL(string: url) else {
+            return
+        }
+
+        validationMessage = model.validate(url: url)
+
+        if validationMessage == nil {
             model.add(url)
             close()
         }

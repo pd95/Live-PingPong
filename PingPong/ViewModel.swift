@@ -41,6 +41,14 @@ class ViewModel: ObservableObject {
         }
     }
 
+    func validate(url: URL) -> String? {
+        let alreadyExists = servers.firstIndex(where: { $0.url == url }) != nil
+        if alreadyExists {
+            return "This server already exists in the list."
+        }
+        return nil
+    }
+
     func add(_ url: URL) {
         let server = Server(url: url)
         servers.append(server)
