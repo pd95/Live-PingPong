@@ -6,16 +6,17 @@
 //
 
 import AppKit
-import Foundation
+import SwiftUI
 import UserNotifications
 
 class ViewModel: ObservableObject {
     @Published var servers: [Server]
     @Published var lastRefreshDate = Date.now
     @Published var refreshInProgress = false
+    @AppStorage("refreshDelayMinutes") var refreshDelayMinutes: Double = 10
 
     private var refreshTask: Task<Void, Error>?
-    let delay: UInt64 = 1_000_000_000 * 10 //60 * 10 // 10 minutes between refreshes
+    var delay: UInt64 = 1_000_000_000 * 60 * 10 // 10 minutes between refreshes
 
     private let savePath = FileManager.documentsDirectory.appendingPathComponent("ServerCache")
 
@@ -27,6 +28,12 @@ class ViewModel: ObservableObject {
             servers = []
         }
 
+        setupRefreshTask()
+    }
+
+    func setupRefreshTask() {
+        print("Setting delay to \(refreshDelayMinutes) minutes")
+        delay = 1_000_000_000 * 60 * UInt64(refreshDelayMinutes)
         refresh()
     }
 

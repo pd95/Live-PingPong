@@ -17,6 +17,7 @@
 		17553CE32873662B00A5B862 /* ServerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17553CE22873662B00A5B862 /* ServerRow.swift */; };
 		17553CE52873674100A5B862 /* AddServerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17553CE42873674100A5B862 /* AddServerView.swift */; };
 		17553CE728737D5800A5B862 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17553CE628737D5800A5B862 /* AppDelegate.swift */; };
+		17553CE92873813900A5B862 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17553CE82873813900A5B862 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		17553CE22873662B00A5B862 /* ServerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerRow.swift; sourceTree = "<group>"; };
 		17553CE42873674100A5B862 /* AddServerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddServerView.swift; sourceTree = "<group>"; };
 		17553CE628737D5800A5B862 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		17553CE82873813900A5B862 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				17553CCD2873616100A5B862 /* PingPongApp.swift */,
+				17553CE82873813900A5B862 /* SettingsView.swift */,
 				17553CCF2873616100A5B862 /* ContentView.swift */,
 				17553CE42873674100A5B862 /* AddServerView.swift */,
 				17553CE22873662B00A5B862 /* ServerRow.swift */,
@@ -160,6 +163,7 @@
 				17553CE728737D5800A5B862 /* AppDelegate.swift in Sources */,
 				17553CE52873674100A5B862 /* AddServerView.swift in Sources */,
 				17553CE1287363CC00A5B862 /* ViewModel.swift in Sources */,
+				17553CE92873813900A5B862 /* SettingsView.swift in Sources */,
 				17553CD02873616100A5B862 /* ContentView.swift in Sources */,
 				17553CDD2873622600A5B862 /* Server.swift in Sources */,
 				17553CE32873662B00A5B862 /* ServerRow.swift in Sources */,

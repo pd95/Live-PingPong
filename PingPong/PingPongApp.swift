@@ -17,5 +17,10 @@ struct PingPongApp: App {
             ContentView()
                 .environmentObject(viewModel)
         }
+
+        Settings {
+            SettingsView()
+                .environmentObject(viewModel)
+        }
     }
 }
