@@ -53,6 +53,7 @@ struct AddServerView: View {
         }
 
         guard let url = URL(string: url) else {
+            validationMessage = "This is not a valid URL."
             return
         }
 
