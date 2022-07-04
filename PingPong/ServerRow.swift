@@ -24,7 +24,7 @@ struct ServerRow: View {
             .buttonStyle(.borderless)
             .help(server.hasChanges ? "Click to clear the change marker for this server." : "")
             VStack(alignment: .leading) {
-                Text(server.url.absoluteString)
+                Link(server.url.absoluteString, destination: server.url)
                     .font(.title)
 
                 Text("Last changed: \(server.lastChange.formatted())")
