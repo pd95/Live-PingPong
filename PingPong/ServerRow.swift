@@ -30,6 +30,9 @@ struct ServerRow: View {
                 Text("Last changed: \(server.lastChange.formatted())")
             }
         }
+        .contextMenu {
+            Button("Delete", action: { viewModel.delete(server: server) })
+        }
     }
 }
 

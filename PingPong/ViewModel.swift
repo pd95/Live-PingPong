@@ -53,6 +53,13 @@ class ViewModel: ObservableObject {
         save()
     }
 
+    func delete(server: Server) {
+        guard let firstIndex = servers.firstIndex(where: { $0.id == server.id }) else { return }
+
+        servers.remove(at: firstIndex)
+        save()
+    }
+
     @MainActor
     private func refreshAllServers() async {
         defer { queueRefresh() }
