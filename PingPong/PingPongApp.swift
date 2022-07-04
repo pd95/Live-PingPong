@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct PingPongApp: App {
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @StateObject private var viewModel = ViewModel()
 
     var body: some Scene {

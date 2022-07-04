@@ -16,6 +16,7 @@
 		17553CE1287363CC00A5B862 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17553CE0287363CC00A5B862 /* ViewModel.swift */; };
 		17553CE32873662B00A5B862 /* ServerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17553CE22873662B00A5B862 /* ServerRow.swift */; };
 		17553CE52873674100A5B862 /* AddServerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17553CE42873674100A5B862 /* AddServerView.swift */; };
+		17553CE728737D5800A5B862 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17553CE628737D5800A5B862 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		17553CE0287363CC00A5B862 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		17553CE22873662B00A5B862 /* ServerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerRow.swift; sourceTree = "<group>"; };
 		17553CE42873674100A5B862 /* AddServerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddServerView.swift; sourceTree = "<group>"; };
+		17553CE628737D5800A5B862 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				17553CDC2873622600A5B862 /* Server.swift */,
 				17553CDE2873631E00A5B862 /* FileManager-DocumentsDirectory.swift */,
 				17553CE0287363CC00A5B862 /* ViewModel.swift */,
+				17553CE628737D5800A5B862 /* AppDelegate.swift */,
 				17553CD12873616200A5B862 /* Assets.xcassets */,
 				17553CD62873616200A5B862 /* PingPong.entitlements */,
 				17553CD32873616200A5B862 /* Preview Content */,
@@ -154,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17553CE728737D5800A5B862 /* AppDelegate.swift in Sources */,
 				17553CE52873674100A5B862 /* AddServerView.swift in Sources */,
 				17553CE1287363CC00A5B862 /* ViewModel.swift in Sources */,
 				17553CD02873616100A5B862 /* ContentView.swift in Sources */,
