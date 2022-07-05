@@ -18,6 +18,7 @@
 		17553CE52873674100A5B862 /* AddServerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17553CE42873674100A5B862 /* AddServerView.swift */; };
 		17553CE728737D5800A5B862 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17553CE628737D5800A5B862 /* AppDelegate.swift */; };
 		17553CE92873813900A5B862 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17553CE82873813900A5B862 /* SettingsView.swift */; };
+		17553CEB2874256D00A5B862 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 17553CEA2874256D00A5B862 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		17553CE42873674100A5B862 /* AddServerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddServerView.swift; sourceTree = "<group>"; };
 		17553CE628737D5800A5B862 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17553CE82873813900A5B862 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		17553CEA2874256D00A5B862 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 		17553CC12873616100A5B862 = {
 			isa = PBXGroup;
 			children = (
+				17553CEA2874256D00A5B862 /* README.md */,
 				17553CCC2873616100A5B862 /* PingPong */,
 				17553CCB2873616100A5B862 /* Products */,
 			);
@@ -148,6 +151,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17553CEB2874256D00A5B862 /* README.md in Resources */,
 				17553CD52873616200A5B862 /* Preview Assets.xcassets in Resources */,
 				17553CD22873616200A5B862 /* Assets.xcassets in Resources */,
 			);
