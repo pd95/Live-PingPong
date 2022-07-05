@@ -90,7 +90,11 @@ class ViewModel: ObservableObject {
         for server in servers {
             print("Fetching \(server.url)")
 
-            if let (newData, _) = try? await session.data(from: server.url) {
+            if var (newData, _) = try? await session.data(from: server.url) {
+                // Convert HTML to AttributedString and then to RTF to strip away invisible meta data
+                if let attributedString = try? NSAttributedString(data: newData, options: [.documentType: NSAttributedString.DocumentType.html], documentAttributes: nil) {
+                    newData = attributedString.rtf(from: NSRange(location: 0, length: attributedString.length)) ?? newData
+                }
                 if newData != server.content {
                     if server.content != nil {
                         changesDetected = true
